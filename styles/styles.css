@@ -16,3 +16,12 @@ body {
     min-height: 100vh;
     padding: 0;
 }
+
+.location_placeholder {
+    border-bottom: solid 1px #000;
+    display: inline-block;
+    min-height: 19px;
+    min-width: 130px;
+    padding: 1px 4px 2px;
+    background-color: rgb(202, 200, 200);
+}
