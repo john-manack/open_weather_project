@@ -5,12 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DOM Starter Kit</title>
+    <title>Open Weather</title>
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
-
+    <main>
+        <h1>Get Current Weather For...</h1>
+        <form id="generateWeather" action="#" method="POST">
+            <label>
+                City:
+                <input
+                    type="text"
+                    name="cityInput"
+                    id="cityInput"
+                    placehodler="Enter name of city here"
+                />
+            </label>
+            <label>
+                State:
+                <input
+                    type="text"
+                    name="stateInput"
+                    id="stateInput"
+                    placehodler="Enter name of state here"
+                />
+            </label>
+            <button type="submit">Get Current Weather</button>
+        </form>
+    </main>
 </body>
+
+<script src="js/get.js"></script>
 <script src="js/index.js"></script>
 </html>
