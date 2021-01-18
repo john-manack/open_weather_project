@@ -1,10 +1,7 @@
 'use strict';
 
 const apiKey = 'ba0d084c74eaed1c67211ce2db29a79f';
-
 const generateWeather = document.querySelector('#generateWeather')
-
-console.log(generateWeather);
 
 generateWeather.addEventListener('submit', event => {
     event.preventDefault();
@@ -28,6 +25,7 @@ function getWeather(city, state) {
     get(url).then(response => {
         updateBody(response.main.temp, response.main.feels_like, response.weather[0].description, response.main.temp_max, response.main.temp_min)
     });
+    console.log(url);
 }
 
 function updateBody(currentTemp, feelsLike, description, high, low) {
